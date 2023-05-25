@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&display=swap");
+:root {
+  --blue5: #40a9ff;
+  --blue6: #1890ff;
+  --blue7: #096dd9;
+  --white: #ffffff;
+  --gray: #E5E5E5;
+  --gray1: #d9d9d9;
+  --gray3: #f5f5f5;
+  --gray6: #bfbfbf;
+  --gray7: #8c8c8c;
+  --szL: 40px;
+  --szD: 32px;
+  --szS: 24px;
+  --fs-md: 16px;
+  --fs-s: 14px;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+/*  height */
+.H-srn {
+  height: 100vh;
+}
+.H-l {
+  height: var(--szL);
+}
+
+.H-d {
+  height: var(--szD);
+}
+
+.H-s {
+  height: var(--szS);
+}
+/*  width */
+.W-74 {
+  width: 74px;
+}
+.W-98 {
+  width: 98px;
+}
+.W-274 {
+  width: 274px;
+}
+.W-320 {
+  width: 320px;
+}
+.H-W-13 {
+  height: 13px;
+  width: 13px;
+}
+.H-W-14 {
+  height: 14px;
+  width: 14px;
+}
+.H-W-8 {
+  height: 8px;
+  width: 8px;
+}
+.H-W-full {
+  height: 100%;
+  width: 100%;
+}
+/* fontfamily */
+.ff-rbt {
+  font-family: "Roboto", sans-serif;
+}
+/* FontSize */
+.Fs-md {
+  font-size: var(--fs-md);
+}
+.Fs-s {
+  font-size: var(--fs-s);
+}
+/* margin */
+.my-16 {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.my-8 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+/* padding */
+.px-34-12 {
+  padding-left: 34px;
+  padding-right: 12px;
+}
+.px-40-16 {
+  padding-left: 40px;
+  padding-right: 16px;
+}
+
+.p-5-16 {
+  padding: 5px 16px;
+}
+
+.p-0 {
+  padding: 0px;
+}
+
+/* background */
+.bgc-white {
+  background-color: var(--white);
+}
+
+.bgc-gray {
+  background-color: var(--gray);
+}
+.bgc-gray3 {
+    background-color: var(--gray3);
+  }
+  
+
+.bgc-blue6 {
+  background-color: var(--blue6);
+}
+
+/* border  */
+.bd-n {
+  border: none;
+}
+.bdrs-2 {
+  border-radius: 2px;
+}
+.bd-1-s-gray1 {
+  border: 1px solid var(--gray1);
+}
+.bd-1-s-blue5 {
+  border: 1px solid var(--blue5);
+}
+
+/* color */
+
+.cr-white {
+  color: var(--white);
+}
+
+/* display and position*/
+.d-n {
+  display: none;
+}
+.d-fc {
+  display: flex;
+  flex-direction: column;
+}
+.d-fr {
+  display: flex;
+  flex-direction: row;
+}
+.jc-c {
+  justify-content: center;
+}
+.ai-c {
+  align-items: center;
+}
+.pos-r {
+  position: relative;
+}
+.pos-a {
+  position: absolute;
+}
+
+.top-13 {
+  top: 13px;
+}
+.top-10 {
+  top: 10px;
+}
+.top-4 {
+  top: 4px;
+}
+
+.left-14 {
+  left: 14px;
+}
+.left-18 {
+  left: 18px;
+}
+/* other */
+.cur-p {
+  cursor: pointer;
+}
+::placeholder{
+    color: var(--gray6);
+}
+/* hover effect */
+
+.bd-1-s-blue5\:h:hover,
+.bd-1-s-blue5\:h:focus {
+  border: 1px solid var(--blue5);
+  outline-color: var(--blue6);
+}
+.bgc-blue5\:h:hover {
+  background-color: var(--blue5);
+}
+.bgc-blue5\:h:focus {
+  background-color: var(--blue7);
+}
+/* disabled */
+#submitBtn:disabled {
+  background-color: var(--gray3);
+  color: var(--gray6);
+}
+.op-\.5 {
+  opacity: 0.5;
+}

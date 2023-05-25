@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 3</title>
+    <link rel="stylesheet" href="root.css" />
+  </head>
+  <body>
+    <form class="Form H-srn bgc-gray d-fc jc-c ai-c">
+      <div
+        id="inputContainer"
+        class="H-l W-320 Fs-md d-fr pos-r bd-1-s-gray1 bdrs-2 bgc-white"
+      >
+        <input
+          id="input"
+          type="text"
+          placeholder="Input placeholder"
+          class="H-W-full px-34-12 ff-rbt bd-n bdrs-2 bd-1-s-blue5:h"
+        />
+        <img
+          id="userIcon"
+          src="./assets/userIcon.png"
+          alt=""
+          class="pos-a top-13 left-14 H-W-14"
+        />
+      </div>
+      <button
+        type="submit"
+        id="submitBtn"
+        class="pos-r H-d W-74 Fsz-s p-5-16 bgc-blue6 ff-rbt bdrs-2 bd-n cr-white my-16 cur-p bgc-blue5:h"
+      >
+        <img
+          id="load"
+          src="./assets/loading.png"
+          alt=""
+          class="pos-a top-10 left-18 H-W-8 d-n"
+        />
+        Button
+      </button>
+    </form>
+    <script>
+      const submitBtn = document.getElementById("submitBtn");
+      const load = document.getElementById("load");
+      const input = document.getElementById("input");
+      const userIcon = document.getElementById("userIcon");
+      submitBtn.addEventListener("click", (event) => {
+          event.preventDefault();
+        load.classList.remove("d-n");
+        submitBtn.classList.replace("W-74", "W-98");
+        submitBtn.classList.replace("p-5-16", "px-40-16");
+        setTimeout(() => {
+          load.classList.add("d-n");
+          submitBtn.classList.replace("W-98", "W-74");
+          submitBtn.classList.replace("px-40-16", "p-5-16");
+          input.classList.remove("bd-1-s-blue5:h");
+          input.disabled = true;
+          submitBtn.disabled = true;
+          userIcon.classList.add("op-.5");
+          input.value = "";
+        }, 2000);
+      });
+    </script>
+  </body>
+</html>
