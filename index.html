@@ -8,38 +8,40 @@
     <link rel="stylesheet" href="root.css" />
   </head>
   <body>
-    <form class="Form H-srn bgc-gray d-fc jc-c ai-c">
-      <div
-        id="inputContainer"
-        class="H-l W-320 Fs-md d-fr pos-r bd-1-s-gray1 bdrs-2 bgc-white"
-      >
-        <input
-          id="input"
-          type="text"
-          placeholder="Input placeholder"
-          class="H-W-full px-34-12 ff-rbt bd-n bdrs-2 bd-1-s-blue5:h"
-        />
-        <img
-          id="userIcon"
-          src="./assets/userIcon.png"
-          alt=""
-          class="pos-a top-13 left-14 H-W-14"
-        />
-      </div>
-      <button
-        type="submit"
-        id="submitBtn"
-        class="pos-r H-d W-74 Fsz-s p-5-16 bgc-blue6 ff-rbt bdrs-2 bd-n cr-white my-16 cur-p bgc-blue5:h"
-      >
-        <img
-          id="load"
-          src="./assets/loading.png"
-          alt=""
-          class="pos-a top-10 left-18 H-W-8 d-n"
-        />
-        Button
-      </button>
-    </form>
+    <div class="div H-srn bgc-white d-fc jc-c ai-c">
+      <form class="Form H-W-40vp md:H-60vp-W-90vp  W-40 bgc-gray d-fc jc-c ai-c">
+        <div
+          id="inputContainer"
+          class="H-l W-320 md:W-276 Fs-md d-fr pos-r bd-1-s-gray1 bdrs-2 bgc-white"
+        >
+          <input
+            id="input"
+            type="text"
+            placeholder="Input placeholder"
+            class="H-W-full px-34-12 ff-rbt bd-n bdrs-2 bd-1-s-blue5:h"
+          />
+          <img
+            id="userIcon"
+            src="./assets/userIcon.png"
+            alt=""
+            class="pos-a top-13 left-14 H-W-14"
+          />
+        </div>
+        <button
+          type="submit"
+          id="submitBtn"
+          class="pos-r H-d W-74 Fsz-s p-5-16 bgc-blue6 ff-rbt bdrs-2 bd-n cr-white my-md cur-p bgc-blue5:h"
+        >
+          <img
+            id="load"
+            src="./assets/loading.png"
+            alt=""
+            class="pos-a top-10 left-18 H-W-8 d-n"
+          />
+          Button
+        </button>
+      </form>
+    </div>
     <script>
       const submitBtn = document.getElementById("submitBtn");
       const load = document.getElementById("load");

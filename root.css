@@ -4,7 +4,7 @@
   --blue6: #1890ff;
   --blue7: #096dd9;
   --white: #ffffff;
-  --gray: #E5E5E5;
+  --gray: #e5e5e5;
   --gray1: #d9d9d9;
   --gray3: #f5f5f5;
   --gray6: #bfbfbf;
@@ -12,8 +12,8 @@
   --szL: 40px;
   --szD: 32px;
   --szS: 24px;
-  --fs-md: 16px;
-  --fs-s: 14px;
+  --md: 16px;
+  --s: 14px;
 }
 body {
   padding: 0;
@@ -26,11 +26,9 @@ body {
 .H-l {
   height: var(--szL);
 }
-
 .H-d {
   height: var(--szD);
 }
-
 .H-s {
   height: var(--szS);
 }
@@ -47,6 +45,11 @@ body {
 .W-320 {
   width: 320px;
 }
+.H-W-40vp {
+  height: 40vh;
+  width: 40vw;
+}
+
 .H-W-13 {
   height: 13px;
   width: 13px;
@@ -69,19 +72,14 @@ body {
 }
 /* FontSize */
 .Fs-md {
-  font-size: var(--fs-md);
+  font-size: var(--md);
 }
 .Fs-s {
-  font-size: var(--fs-s);
+  font-size: var(--s);
 }
 /* margin */
-.my-16 {
-  margin-top: 16px;
-  margin-bottom: 16px;
-}
-.my-8 {
-  margin-top: 8px;
-  margin-bottom: 8px;
+.my-md {
+  margin: var(--md) 0px var(--md) 0px;
 }
 /* padding */
 .px-34-12 {
@@ -92,32 +90,25 @@ body {
   padding-left: 40px;
   padding-right: 16px;
 }
-
 .p-5-16 {
   padding: 5px 16px;
 }
-
 .p-0 {
   padding: 0px;
 }
-
 /* background */
 .bgc-white {
   background-color: var(--white);
 }
-
 .bgc-gray {
   background-color: var(--gray);
 }
 .bgc-gray3 {
-    background-color: var(--gray3);
-  }
-  
-
+  background-color: var(--gray3);
+}
 .bgc-blue6 {
   background-color: var(--blue6);
 }
-
 /* border  */
 .bd-n {
   border: none;
@@ -131,13 +122,10 @@ body {
 .bd-1-s-blue5 {
   border: 1px solid var(--blue5);
 }
-
 /* color */
-
 .cr-white {
   color: var(--white);
 }
-
 /* display and position*/
 .d-n {
   display: none;
@@ -162,7 +150,6 @@ body {
 .pos-a {
   position: absolute;
 }
-
 .top-13 {
   top: 13px;
 }
@@ -172,7 +159,6 @@ body {
 .top-4 {
   top: 4px;
 }
-
 .left-14 {
   left: 14px;
 }
@@ -180,14 +166,16 @@ body {
   left: 18px;
 }
 /* other */
+.op-\.5 {
+  opacity: 0.5;
+}
 .cur-p {
   cursor: pointer;
 }
-::placeholder{
-    color: var(--gray6);
+::placeholder {
+  color: var(--gray6);
 }
 /* hover effect */
-
 .bd-1-s-blue5\:h:hover,
 .bd-1-s-blue5\:h:focus {
   border: 1px solid var(--blue5);
@@ -204,6 +192,12 @@ body {
   background-color: var(--gray3);
   color: var(--gray6);
 }
-.op-\.5 {
-  opacity: 0.5;
+@media (max-width: 48em) {
+  .md\:H-60vp-W-90vp{
+    height: 60vh;
+    width: 90vw;
+  }
+  .md\:W-276{
+    width: 276px;
+  }
 }
