@@ -8,29 +8,29 @@
     <link rel="stylesheet" href="root.css" />
   </head>
   <body>
-    <div class="div H-srn bgc-white d-fc jc-c ai-c">
-      <form class="Form H-W-40vp md:H-60vp-W-90vp  W-40 bgc-gray d-fc jc-c ai-c">
+    <div class="Container H-srn bgc-gray d-fc jc-c ai-c">
+      <form class="Form H-W-40vp md:H-60vh-W-90vw  W-40 bgc-white d-fc jc-c ai-c">
         <div
           id="inputContainer"
-          class="H-l W-320 md:W-276 Fs-md d-fr pos-r bd-1-s-gray1 bdrs-2 bgc-white"
+          class="H-l W-320 md:W-276 Fs-md d-fr pos-r  bdrs-2 bgc-white"
         >
           <input
             id="input"
             type="text"
             placeholder="Input placeholder"
-            class="H-W-full px-34-12 ff-rbt bd-n bdrs-2 bd-1-s-blue5:h"
+            class="H-W-full px-34-12 ff-rbt bd-n bdrs-2 bd-1-s-gray1 bd-1-s-blue5:h"
           />
           <img
             id="userIcon"
             src="./assets/userIcon.png"
             alt=""
-            class="pos-a top-13 left-14 H-W-14"
+            class="pos-a top-13 left-14 H-W-s"
           />
         </div>
         <button
           type="submit"
           id="submitBtn"
-          class="pos-r H-d W-74 Fsz-s p-5-16 bgc-blue6 ff-rbt bdrs-2 bd-n cr-white my-md cur-p bgc-blue5:h"
+          class="pos-r H-d W-74 Fs-s p-5-16 bgc-blue6 ff-rbt bdrs-2 bd-n cr-white my-md cur-p bgc-blue5:h"
         >
           <img
             id="load"
@@ -51,11 +51,12 @@
           event.preventDefault();
         load.classList.remove("d-n");
         submitBtn.classList.replace("W-74", "W-98");
-        submitBtn.classList.replace("p-5-16", "px-40-16");
+        submitBtn.classList.replace("p-5-16", "px-lg-md");
         setTimeout(() => {
           load.classList.add("d-n");
-          submitBtn.classList.replace("W-98", "W-74");
-          submitBtn.classList.replace("px-40-16", "p-5-16");
+          submitBtn.classList.add("bd-1-s-gray1")
+          submitBtn.classList.replace("W-98", "W-74")
+          submitBtn.classList.replace("px-lg-md", "p-5-16");
           input.classList.remove("bd-1-s-blue5:h");
           input.disabled = true;
           submitBtn.disabled = true;

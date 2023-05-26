@@ -9,11 +9,12 @@
   --gray3: #f5f5f5;
   --gray6: #bfbfbf;
   --gray7: #8c8c8c;
-  --szL: 40px;
-  --szD: 32px;
-  --szS: 24px;
+  --xl2: 40px;
+  --xl: 32px;
+  --lg: 24px;
   --md: 16px;
   --s: 14px;
+  --zr:0px;
 }
 body {
   padding: 0;
@@ -24,13 +25,13 @@ body {
   height: 100vh;
 }
 .H-l {
-  height: var(--szL);
+  height: var(--xl2);
 }
 .H-d {
-  height: var(--szD);
+  height: var(--xl);
 }
 .H-s {
-  height: var(--szS);
+  height: var(--lg);
 }
 /*  width */
 .W-74 {
@@ -49,14 +50,13 @@ body {
   height: 40vh;
   width: 40vw;
 }
-
 .H-W-13 {
   height: 13px;
   width: 13px;
 }
-.H-W-14 {
-  height: 14px;
-  width: 14px;
+.H-W-s {
+  height: var(--s);
+  width: var(--s);
 }
 .H-W-8 {
   height: 8px;
@@ -79,22 +79,19 @@ body {
 }
 /* margin */
 .my-md {
-  margin: var(--md) 0px var(--md) 0px;
+  margin: var(--md) var(--zr) var(--md) var(--zr);
 }
 /* padding */
 .px-34-12 {
   padding-left: 34px;
   padding-right: 12px;
 }
-.px-40-16 {
-  padding-left: 40px;
-  padding-right: 16px;
+.px-lg-md {
+  padding-left: var(--lg);
+  padding-right: var(--md);
 }
 .p-5-16 {
-  padding: 5px 16px;
-}
-.p-0 {
-  padding: 0px;
+  padding: 5px var(--md);
 }
 /* background */
 .bgc-white {
@@ -192,8 +189,9 @@ body {
   background-color: var(--gray3);
   color: var(--gray6);
 }
+/* media */
 @media (max-width: 48em) {
-  .md\:H-60vp-W-90vp{
+  .md\:H-60vh-W-90vw{
     height: 60vh;
     width: 90vw;
   }
