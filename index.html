@@ -10,39 +10,113 @@
   <body>
     <div class="Container H-srn bgc-gray d-fc jc-c ai-c">
       <form
-        class="Form H-50-W-40 md:H-60vh-W-90vw W-40 bgc-white d-fc jc-c ai-c"
+        class="Form H-90-W-40 md:H-90-W-90 W-40 bgc-white d-fc jc-c ai-c"
       >
-        <div
-          id="inputContainer"
-          class="H-xl2 W-320 md:W-276 Fs-md d-fr pos-r bdrs-2 bgc-white"
-        >
-          <input
-            id="input"
-            type="text"
-            placeholder="Input placeholder"
-            class="H-W-full px-34-12 ff-rbt bd-n bdrs-2 bd-1-s-gray1 bd-1-s-blue5:h"
-          />
-          <img
-            id="userIcon"
-            src="./assets/userIcon.png"
-            alt=""
-            class="pos-a top-13 left-s H-W-s"
-          />
+        <div class="inputContainer">
+          <div
+            id="input1"
+            class="H-xl3 W-320 md:W-276 Fs-md d-fr pos-r bdrs-2 bgc-white"
+          >
+            <input
+              type="text"
+              placeholder="Input placeholder"
+              class="input H-W-full px-s ff-rbt bd-n bdrs-2 bd-1-s-gray1 bd-1-s-blue5:h"
+            />
+          </div>
+
+          <div
+            id="input2"
+            class="H-xl3 W-320 md:W-276 Fs-md d-fr pos-r bdrs-2 bgc-white mt-s"
+          >
+            <input
+              type="text"
+              placeholder="Input placeholder"
+              class="input H-W-full px-xl2-12 ff-rbt bd-n bdrs-2 bd-1-s-gray1 bd-1-s-blue5:h"
+            />
+            <img
+              id="userIcon"
+              src="./assets/userIcon.png"
+              alt=""
+              class="pos-a top-s left-s H-W-s"
+            />
+          </div>
+
+          <div
+            id="input3"
+            class="H-xl3 W-320 md:W-276 Fs-md d-fr pos-r bdrs-2 bgc-white mt-s"
+          >
+            <input
+              type="text"
+              placeholder="Input placeholder"
+              class="input H-W-full px-12-xl2 ff-rbt bd-n bdrs-2 bd-1-s-gray1 bd-1-s-blue5:h"
+            />
+            <img
+              id="userIcon"
+              src="./assets/userIcon.png"
+              alt=""
+              class="pos-a top-s right-s H-W-s"
+            />
+          </div>
+          <div
+            id="input4"
+            class="H-xl3 W-320 md:W-276 Fs-md d-fr pos-r bdrs-2 bgc-white mt-s"
+          >
+            <input
+              type="text"
+              placeholder="Input placeholder"
+              class="input H-W-full px-xl2 ff-rbt bd-n bdrs-2 bd-1-s-gray1 bd-1-s-blue5:h"
+            />
+            <img
+              id="userIcon"
+              src="./assets/userIcon.png"
+              alt=""
+              class="pos-a top-s left-s H-W-s"
+            />
+            <img
+              id="userIcon"
+              src="./assets/InfoCircle.png"
+              alt=""
+              class="pos-a top-s right-s H-W-s"
+            />
+          </div>
+
+          <div
+            id="input5"
+            class="H-xl3 W-320 md:W-276 Fs-md d-fr pos-r bdrs-2 bgc-white mt-s"
+          >
+            <input
+              type="text"
+              placeholder="Input placeholder"
+              class="input H-W-full px-xl4 ff-rbt bd-n bdrs-2 bd-1-s-gray1 bd-1-s-blue5:h"
+            />
+            <img
+              id="userIcon"
+              src="./assets/Prefix.png"
+              alt=""
+              class="pos-a top-s left-s H-md-xl"
+            />
+            <img
+              id="userIcon"
+              src="./assets/Suffix.png"
+              alt=""
+              class="pos-a top-s right-s H-md-xl"
+            />
+          </div>
         </div>
 
         <div class="buttonsContainer W-full d-fr jc-sb ai-c">
-          <div class="d-fc mx-10">
+          <div class="d-fc mx-s">
             <button
               type="submit"
               id="submitBtn"
-              class=" d-fr jc-c ai-c H-xl W-74 Fs-s p-5-16 bgc-blue6 ff-rbt bdrs-2 bd-n cr-white mt-s cur-p bgc-blue5:h"
+              class="d-fr jc-c ai-c H-xl W-74 Fs-s bgc-blue6 ff-rbt bdrs-2 bd-n cr-white mt-s cur-p bgc-blue5:h"
               onclick="handleButtonClick('submitBtn','load','input')"
             >
               <img
                 id="load"
                 src="./assets/loading1.svg"
                 alt=""
-                class=" H-W-s d-n"
+                class="H-W-s d-n"
               />
               Button
             </button>
@@ -50,14 +124,14 @@
             <button
               type="submit"
               id="submitBtn2"
-              class="d-fr jc-c ai-c H-xl W-74 Fs-s p-5-16 bgc-white ff-rbt bd-1-s-gray1 bdrs-2 cr-gray9 mt-s cur-p cr-blue5:h"
+              class="d-fr jc-c ai-c H-xl W-74 Fs-s bgc-white ff-rbt bd-1-s-gray1 bdrs-2 cr-gray9 mt-s cur-p cr-blue5:h"
               onclick="handleButtonClick('submitBtn2','load2','input')"
             >
               <img
                 id="load2"
                 src="./assets/loading.svg"
                 alt=""
-                class=" H-W-s d-n"
+                class="H-W-s d-n"
               />
               Button
             </button>
@@ -65,14 +139,14 @@
             <button
               type="submit"
               id="submitBtn3"
-              class="d-fr jc-c ai-c H-xl W-74 Fs-s p-5-16 bgc-white ff-rbt bdrs-2 bd-1-d-gray1 cr-gray9 mt-s cur-p cr-blue5:h bd-1-d-blue5:h"
+              class="d-fr jc-c ai-c H-xl W-74 Fs-s bgc-white ff-rbt bdrs-2 bd-1-d-gray1 cr-gray9 mt-s cur-p cr-blue5:h bd-1-d-blue5:h"
               onclick="handleButtonClick('submitBtn3','load3','input')"
             >
               <img
                 id="load3"
                 src="./assets/loading.svg"
                 alt=""
-                class=" H-W-s d-n"
+                class="H-W-s d-n"
               />
               Button
             </button>
@@ -80,37 +154,37 @@
             <button
               type="submit"
               id="submitBtn4"
-              class="d-fr jc-c ai-c H-xl W-74 Fs-s p-5-16 bgc-white ff-rbt bdrs-2 bd-n cr-gray9 mt-s cur-p cr-blue5:h bgc-gray2:h cr-gary2:h bd-1"
+              class="d-fr jc-c ai-c H-xl W-74 Fs-s bgc-white ff-rbt bdrs-2 bd-n cr-gray9 mt-s cur-p cr-blue5:h bgc-gray2:h cr-gary2:h bd-1"
               onclick="handleButtonClick('submitBtn4','load4','input')"
             >
               <img
                 id="load4"
                 src="./assets/loading.svg"
                 alt=""
-                class=" H-W-s d-n"
+                class="H-W-s d-n"
               />
               Button
             </button>
 
             <button
               id="submitBtn5"
-              class="d-fr jc-c ai-c H-xl W-74 Fs-s p-5-16 bgc-white ff-rbt bd-n cr-blue6 mt-s cur-p cr-blue5:h cr-blue5:f"
+              class="d-fr jc-c ai-c H-xl W-74 Fs-s bgc-white ff-rbt bd-n cr-blue6 mt-s cur-p cr-blue5:h cr-blue5:f"
               onclick="handleButtonClick('submitBtn5','load5','input')"
             >
               <img
                 id="load5"
                 src="./assets/loading5.svg"
                 alt=""
-                class=" H-W-s d-n"
+                class="H-W-s d-n"
               />
               Button
             </button>
           </div>
-          <div class="d-fc mx-10">
+          <div class="d-fc mx-s">
             <button
               type="submit"
               id="iconSubmitBtn1"
-              class="pos-r d-fr jc-c ai-c H-xl W-74 Fs-s p-5-16 bgc-blue6 ff-rbt bdrs-2 bd-n cr-white mt-s cur-p bgc-blue5:h"
+              class="pos-r d-fr jc-c ai-c H-xl W-74 Fs-s bgc-blue6 ff-rbt bdrs-2 bd-n cr-white mt-s cur-p bgc-blue5:h"
               onclick="handleButtonClick('iconSubmitBtn1','iconload1','input','iconSearch1')"
             >
               <img
@@ -131,14 +205,14 @@
             <button
               type="submit"
               id="iconSubmitBtn2"
-              class="pos-r d-fr jc-c ai-c H-xl W-74 Fs-s p-5-16 bgc-white ff-rbt bd-1-s-gray1 bdrs-2 cr-gray9 mt-s cur-p cr-blue5:h"
+              class="pos-r d-fr jc-c ai-c H-xl W-74 Fs-s bgc-white ff-rbt bd-1-s-gray1 bdrs-2 cr-gray9 mt-s cur-p cr-blue5:h"
               onclick="handleButtonClick('iconSubmitBtn2','iconload2','input','iconSearch2')"
             >
               <img
                 id="iconload2"
                 src="./assets/loading.svg"
                 alt=""
-                class=" H-W-s d-n"
+                class="H-W-s d-n"
               />
               <img
                 id="iconSearch2"
@@ -152,28 +226,28 @@
             <button
               type="submit"
               id="iconSubmitBtn3"
-              class="pos-r d-fr jc-c ai-c H-xl W-74 Fs-s p-5-16 bgc-white ff-rbt bdrs-2 bd-1-d-gray1 cr-gray9 mt-s cur-p cr-blue5:h bd-1-d-blue5:h"
+              class="pos-r d-fr jc-c ai-c H-xl W-74 Fs-s bgc-white ff-rbt bdrs-2 bd-1-d-gray1 cr-gray9 mt-s cur-p cr-blue5:h bd-1-d-blue5:h"
               onclick="handleButtonClick('iconSubmitBtn3','iconload3','input','iconSearch3')"
             >
               <img
                 id="iconload3"
                 src="./assets/loading.svg"
                 alt=""
-                class=" H-W-s d-n"
+                class="H-W-s d-n"
               />
               <img
-              id="iconSearch3"
-              src="./assets/searchBk.svg"
-              alt=""
-              class="H-W-s"
-            />
+                id="iconSearch3"
+                src="./assets/searchBk.svg"
+                alt=""
+                class="H-W-s"
+              />
               Button
             </button>
 
             <button
               type="submit"
               id="iconSubmitBtn4"
-              class="pos-r d-fr jc-c ai-c H-xl W-74 Fs-s p-5-16 bgc-white ff-rbt bdrs-2 bd-n cr-gray9 mt-s cur-p cr-blue5:h bgc-gray2:h cr-gary2:h bd-1"
+              class="pos-r d-fr jc-c ai-c H-xl W-74 Fs-s bgc-white ff-rbt bdrs-2 bd-n cr-gray9 mt-s cur-p cr-blue5:h bgc-gray2:h cr-gary2:h bd-1"
               onclick="handleButtonClick('iconSubmitBtn4','iconload4','input','iconSearch4')"
             >
               <img
@@ -183,35 +257,35 @@
                 class="H-W-s d-n"
               />
               <img
-              id="iconSearch4"
-              src="./assets/searchBk.svg"
-              alt=""
-              class="H-W-s"
-            />
+                id="iconSearch4"
+                src="./assets/searchBk.svg"
+                alt=""
+                class="H-W-s"
+              />
               Button
             </button>
 
             <button
               id="iconSubmitBtn5"
-              class="pos-r d-fr jc-c ai-c H-xl W-74 Fs-s p-5-16 bgc-white ff-rbt bd-n cr-blue6 mt-s cur-p cr-blue5:h cr-blue5:f"
+              class="pos-r d-fr jc-c ai-c H-xl W-74 Fs-s bgc-white ff-rbt bd-n cr-blue6 mt-s cur-p cr-blue5:h cr-blue5:f"
               onclick="handleButtonClick('iconSubmitBtn5','iconload5','input','iconSearch5')"
             >
               <img
                 id="iconload5"
                 src="./assets/loading5.svg"
                 alt=""
-                class=" H-W-s d-n"
+                class="H-W-s d-n"
               />
               <img
-              id="iconSearch5"
-              src="./assets/searchB.svg"
-              alt=""
-              class="H-W-s"
-            />
+                id="iconSearch5"
+                src="./assets/searchB.svg"
+                alt=""
+                class="H-W-s"
+              />
               Button
             </button>
           </div>
-          <div class="d-fc jc-sa gap mx-10">
+          <div class="d-fc mx-s">
             <button
               type="submit"
               id="searchBtn1"
@@ -336,10 +410,12 @@
         event.preventDefault();
         let button = document.getElementById(buttonId);
         let load = document.getElementById(loadId);
-        let input = document.getElementById(inputId);
+        let input = document.querySelectorAll(inputId);
         let iconSearch = document.getElementById(icon);
         console.log(button, load, input);
+
         load.classList.remove("d-n");
+        button.classList.remove("bd-1-d-blue5:h");
         if (icon != "") {
           iconSearch.classList.add("d-n");
         }
@@ -353,12 +429,17 @@
         setTimeout(() => {
           load.classList.add("d-n");
           button.classList.add("bd-1-s-gray1");
-          input.classList.remove("bd-1-s-blue5:h");
-          input.value = "";
-          input.disabled = true;
-          button.disabled = true;
+          if (icon != "") {
             iconSearch.classList.remove("d-n");
             iconSearch.src = "./assets/searchGy.svg";
+          }
+          for (let i = 0; i < input.length; i++) {
+            input[i].classList.remove("bd-1-s-blue5:h");
+            input[i].value = "";
+            input[i].disabled = true;
+            document.getElementById(`input${i+1}`).classList.add("op-.5");
+          }
+          button.disabled = true;
         }, 2000);
       }
 
@@ -372,26 +453,28 @@
         const searchBt = document.getElementById(searchBtn);
         const searchL = document.getElementById(searchLoad);
         const searchI = document.getElementById(searchIcon);
-        const I = document.getElementById(input);
-
+        const I = document.querySelectorAll(input);
         searchI.classList.add("d-n");
-        searchL.classList.remove("d-n");
+        searchL.classList.remove("d-n");//--
         if (searchBtn == "searchBtn2" || searchBtn == "searchBtn3") {
-          searchI.src = "./assets/searchB.svg";
-          searchBt.classList.remove("bd-1-s-blue5:h");
-          searchBt.classList.remove("bd-1-d-blue5:h");
+          // searchI.src = "./assets/searchB.svg";
+          searchBt.classList.remove("bd-1-s-blue5:h");//--
+          searchBt.classList.remove("bd-1-d-blue5:h");//--
         }
         if (searchBtn == "searchBtn4") {
           searchBt.classList.remove("bgc-gray2:h");
         }
         setTimeout(() => {
-          I.classList.remove("bd-1-s-blue5:h");
-          I.value = "";
+          for (let i = 0; i < I.length; i++) {
+            I[i].classList.remove("bd-1-s-blue5:h");
+            I[i].value = "";
+            I[i].disabled = true;
+            document.getElementById(`input${i+1}`).classList.add("op-.5");
+          }
           searchI.classList.remove("d-n");
           searchL.classList.add("d-n");
-          searchI.src = "./assets/searchGy.svg";
-          I.disabled = true;
-          searchBt.disabled = true;
+          searchI.src = "./assets/searchGy.svg";//--
+          searchBt.disabled = true;//--
         }, 2000);
       }
     </script>
