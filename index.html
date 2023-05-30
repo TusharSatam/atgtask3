@@ -9,9 +9,7 @@
   </head>
   <body>
     <div class="Container H-srn bgc-gray d-fc jc-c ai-c">
-      <form
-        class="Form H-90-W-40 md:H-90-W-90 W-40 bgc-white d-fc jc-c ai-c"
-      >
+      <form class="Form H-90-W-40 md:H-90-W-90 W-40 bgc-white d-fc jc-c ai-c">
         <div class="inputContainer">
           <div
             id="input1"
@@ -290,7 +288,7 @@
               type="submit"
               id="searchBtn1"
               class="d-fr jc-c ai-c H-W-xl bgc-blue6 bdrs-2 bd-n mt-s cur-p bgc-blue5:h"
-              onclick="handleSearchButtonClick('searchBtn1','searchLoad1','searchIcon1','input')"
+              onclick="handleButtonClick('searchBtn1','searchLoad1','input','searchIcon1')"
             >
               <img
                 id="searchLoad1"
@@ -310,7 +308,7 @@
               type="submit"
               id="searchBtn2"
               class="d-fr jc-c ai-c H-W-xl bgc-white bd-1-s-gray1 bdrs-2 mt-s cur-p bd-1-s-blue5:h"
-              onclick="handleSearchButtonClick('searchBtn2','searchLoad2','searchIcon2','input')"
+              onclick="handleButtonClick('searchBtn2','searchLoad2','input','searchIcon2')"
             >
               <img
                 id="searchLoad2"
@@ -330,7 +328,7 @@
               type="submit"
               id="searchBtn3"
               class="d-fr jc-c ai-c H-W-xl bgc-white bdrs-2 bd-1-d-gray1 mt-s cur-p cr-blue5:h bd-1-d-blue5:h"
-              onclick="handleSearchButtonClick('searchBtn3','searchLoad3','searchIcon3','input')"
+              onclick="handleButtonClick('searchBtn3','searchLoad3','input','searchIcon3')"
             >
               <img
                 id="searchLoad3"
@@ -350,7 +348,7 @@
               type="submit"
               id="searchBtn4"
               class="d-fr jc-c ai-c H-W-xl bgc-white bdrs-2 bd-n mt-s cur-p bgc-gray2:h bd-1"
-              onclick="handleSearchButtonClick('searchBtn4','searchLoad4','searchIcon4','input')"
+              onclick="handleButtonClick('searchBtn4','searchLoad4','input','searchIcon4')"
             >
               <img
                 id="searchLoad4"
@@ -369,7 +367,7 @@
             <button
               id="searchBtn5"
               class="d-fr jc-c ai-c H-W-xl bgc-white bd-n mt-s cur-p"
-              onclick="handleSearchButtonClick('searchBtn5','searchLoad5','searchIcon5','input')"
+              onclick="handleButtonClick('searchBtn5','searchLoad5','input','searchIcon5')"
             >
               <img
                 id="searchLoad5"
@@ -405,15 +403,13 @@
       iconSubmitBtn3.addEventListener("mouseleave", function () {
         iconSearch3.src = "./assets/searchBk.svg";
       });
-
+      // ------------------------------------------------
       function handleButtonClick(buttonId, loadId, inputId, icon = "") {
         event.preventDefault();
         let button = document.getElementById(buttonId);
         let load = document.getElementById(loadId);
         let input = document.querySelectorAll(inputId);
         let iconSearch = document.getElementById(icon);
-        console.log(button, load, input);
-
         load.classList.remove("d-n");
         button.classList.remove("bd-1-d-blue5:h");
         if (icon != "") {
@@ -426,9 +422,17 @@
         ) {
           submitBtn5.classList.remove("bd-1-d-blue5:h");
         }
+        if (buttonId == "searchBtn2" || buttonId == "searchBtn3") {
+          button.classList.remove("bd-1-s-blue5:h", "bd-1-d-blue5:h");
+        }
+        if (buttonId == "searchBtn4") {
+          button.classList.remove("bgc-gray2:h");
+        }
         setTimeout(() => {
           load.classList.add("d-n");
-          button.classList.add("bd-1-s-gray1");
+          if (buttonId !== "searchBtn4" && buttonId !== "searchBtn5") {
+            button.classList.add("bd-1-s-gray1");
+          }
           if (icon != "") {
             iconSearch.classList.remove("d-n");
             iconSearch.src = "./assets/searchGy.svg";
@@ -437,44 +441,9 @@
             input[i].classList.remove("bd-1-s-blue5:h");
             input[i].value = "";
             input[i].disabled = true;
-            document.getElementById(`input${i+1}`).classList.add("op-.5");
+            document.getElementById(`input${i + 1}`).classList.add("op-.5");
           }
           button.disabled = true;
-        }, 2000);
-      }
-
-      function handleSearchButtonClick(
-        searchBtn,
-        searchLoad,
-        searchIcon,
-        input
-      ) {
-        event.preventDefault();
-        const searchBt = document.getElementById(searchBtn);
-        const searchL = document.getElementById(searchLoad);
-        const searchI = document.getElementById(searchIcon);
-        const I = document.querySelectorAll(input);
-        searchI.classList.add("d-n");
-        searchL.classList.remove("d-n");//--
-        if (searchBtn == "searchBtn2" || searchBtn == "searchBtn3") {
-          // searchI.src = "./assets/searchB.svg";
-          searchBt.classList.remove("bd-1-s-blue5:h");//--
-          searchBt.classList.remove("bd-1-d-blue5:h");//--
-        }
-        if (searchBtn == "searchBtn4") {
-          searchBt.classList.remove("bgc-gray2:h");
-        }
-        setTimeout(() => {
-          for (let i = 0; i < I.length; i++) {
-            I[i].classList.remove("bd-1-s-blue5:h");
-            I[i].value = "";
-            I[i].disabled = true;
-            document.getElementById(`input${i+1}`).classList.add("op-.5");
-          }
-          searchI.classList.remove("d-n");
-          searchL.classList.add("d-n");
-          searchI.src = "./assets/searchGy.svg";//--
-          searchBt.disabled = true;//--
         }, 2000);
       }
     </script>
